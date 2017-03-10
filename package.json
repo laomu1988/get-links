@@ -1,0 +1,26 @@
+{
+  "name": "get-links",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node test/test.test.js",
+    "push": "nrm use npm && npm version patch && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/laomu1988/get-links.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/laomu1988/get-links/issues"
+  },
+  "devDependencies": {
+    "standard": "^8.6.0"
+  },
+  "author": "laomu1988@qq.com",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^0.22.0"
+  }
+}
