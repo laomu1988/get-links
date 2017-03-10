@@ -2,12 +2,12 @@
 
 ## install
 ```sh
-npm install get-links
+npm install ctx-links
 ```
 
 ## usage
 ```js
-var getLinks = require('get-links')
+var getLinks = require('ctx-links')
 var src = `
 <img src="/test.png">
 <a href="/index.html">test</a>
@@ -25,7 +25,7 @@ console.log(links)
 */
 ```
 ## api
-* get-links.html(html, baseUrl)
+* ctx-links.html(html, baseUrl)
   - @param {string} html html内容
   - @param {string} baseUrl 网址
   - @return {array} 所有的链接地址（去重后的）
