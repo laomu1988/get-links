@@ -23,8 +23,22 @@ function getHTMLLinks (html, baseUrl) {
     throw e
   }
 }
+
+function getCssLinks(css, baseUrl) {
+  var links = [];
+  css = css + ''
+  css.replace(/\url\s*\([\'\"]*([^'"\)]*)/g,function(all, link) {
+    if(isRealLink(link)){
+      link = Url.resolve(baseUrl, link)
+      links.push(link)
+    }
+  })
+  return arrUnique(links)
+}
+
 module.exports = {
-  html: getHTMLLinks
+  html: getHTMLLinks,
+  css: getCssLinks
 }
 
 // 是否是指向某个文件的链接

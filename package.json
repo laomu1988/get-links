@@ -1,7 +1,7 @@
 {
   "name": "ctx-links",
   "version": "1.0.1",
-  "description": "",
+  "description": "获取文件中的所有链接",
   "main": "src/index.js",
   "scripts": {
     "test": "node test/test.test.js",

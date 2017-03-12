@@ -6,4 +6,11 @@ var src = `
 <script src="test.js"></script>
 `
 var links = getLinks.html(src, 'http://www.test.com/test/index.html')
+
+
 console.log(links)
+var style = `
+background: url("../img/test.png")
+`
+
+console.log(getLinks.css(style, 'http://www.test.com/test/index.css'))

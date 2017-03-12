@@ -25,7 +25,8 @@ console.log(links)
 */
 ```
 ## api
-* ctx-links.html(html, baseUrl)
+* html(html, baseUrl)
   - @param {string} html html内容
   - @param {string} baseUrl 网址
   - @return {array} 所有的链接地址（去重后的）
+* css(cssContent, baseUrl) 取出css文件内部中的引用地址
